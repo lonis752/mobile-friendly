@@ -4,13 +4,28 @@
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
+body {
+  display: grid;
+  height: 100vh;
+  grid-template-rows: 1fr 2fr 1fr;
+  grid-template-areas:
+    "bio"
+    "projects"
+    "footer";
+}
+
 .bio {
+  grid-area: bio;
   background-image: linear-gradient(176deg, #25bec8 70%, white calc(70% + 2px));
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   padding: 1.2rem 6rem 1.8rem;
+}
+
+.icons i {
+  margin: 0.4rem;
 }
 
 .image-container {
@@ -28,12 +43,15 @@
 }
 
 .name {
+    width: 16rem;
   position: absolute;
   top: 95%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-46%, -51%);
   text-align: center;
   color: white;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 0 1.2rem 0;
 }
 .bio-writeup {
   background-color: white;
@@ -53,12 +71,13 @@
 }
 
 .projects {
+  grid-area: projects;
   display: grid;
   grid-template-areas: "a a";
   align-items: center;
   justify-items: center;
   gap: 1.2rem;
-  padding: 1.2rem 1.2rem 1.8rem;
+  padding: 1.2rem 1.2rem 6rem;
 }
 
 .project {
@@ -67,7 +86,7 @@
   align-items: center;
   justify-content: center;
   gap: 1.2rem;
-  max-width: 12rem;
+  max-width: 15rem;
   box-shadow: 0 0 10px #dbdbdb;
   padding: 1.2rem;
 }
@@ -81,15 +100,19 @@
   justify-content: space-between;
 }
 
+.project-icons {
+  margin-top: 0.2rem;
+}
+
 .project img {
   width: 10rem;
   height: auto;
 }
 
 .left {
-    display: flex;
-    flex-direction: column;
-    gap: 0.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
 }
 
 .right {
@@ -97,6 +120,7 @@
 }
 
 footer {
+  grid-area: footer;
   background-color: #25bec8;
   display: flex;
   color: white;
@@ -111,8 +135,8 @@ footer img {
 }
 
 .align-icons {
-    display: flex;
-    gap: 0.6rem;
+  display: flex;
+  gap: 0.6rem;
 }
 
 .fa {
@@ -126,4 +150,10 @@ footer img {
 
 .fa:hover {
   opacity: 0.7;
+}
+
+@media only screen and (max-width: 600px) {
+  .projects {
+    grid-template-areas: "a";
+  }
 }
