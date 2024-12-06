@@ -48,25 +48,24 @@ body {
   width: 90%;
   max-width: 16rem;
   position: absolute;
-  top: 95%;
+  top: 93%;
   left: 50%;
   transform: translate(-55%, -50%);
   text-align: center;
   color: white;
-  background-color: rgba(0, 0, 0, 0.8);
-  padding: 0 0.6rem 0;
 }
 
 .bio-writeup {
   background-color: white;
   width: 100%;
-  height: 15rem;
+  height: auto;
   padding: 1.2rem 2.4rem 1.2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 1.2rem;
   box-shadow: 10px 10px 10px black;
+  margin-left: -3rem;
 }
 
 .bio-writeup .icons {
@@ -168,13 +167,7 @@ footer img {
     width: 550px;
   }
 
-  .bio {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .footer {
+  footer {
     flex-direction: column;
   }
 }
@@ -195,7 +188,17 @@ footer img {
     grid-template-areas: "a";
   }
 
-  .footer {
+  .bio {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .bio-writeup {
+    margin: 0;
+  }
+
+  footer {
     flex-direction: column;
   }
 }
