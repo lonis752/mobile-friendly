@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.bio {
+  background-image: linear-gradient(176deg, #25bec8 70%, white calc(70% + 2px));
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 1.2rem 6rem 1.8rem;
+}
+
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.bio img {
+  display: block;
+  width: 20rem;
+  height: 22rem;
+  object-fit: cover;
+  margin: 1.2rem 0 0 1.2rem;
+  box-shadow: 5px 5px 5px black;
+}
+
+.name {
+  position: absolute;
+  top: 95%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+.bio-writeup {
+  background-color: white;
+  width: 30rem;
+  height: 15rem;
+  padding: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.2rem;
+  box-shadow: 10px 10px 10px black;
+}
+
+.bio-writeup .icons {
+  display: flex;
+  justify-content: end;
+}
+
+.projects {
+  display: grid;
+  grid-template-areas: "a a";
+  align-items: center;
+  justify-items: center;
+  gap: 1.2rem;
+  padding: 1.2rem 1.2rem 1.8rem;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
+  max-width: 12rem;
+  box-shadow: 0 0 10px #dbdbdb;
+  padding: 1.2rem;
+}
+
+.project-desc {
+  /* border: 2px solid black; */
+}
+
+.project-heading {
+  display: flex;
+  justify-content: space-between;
+}
+
+.project img {
+  width: 10rem;
+  height: auto;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.right {
+  grid-column-start: 2;
+}
+
+footer {
+  background-color: #25bec8;
+  display: flex;
+  color: white;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1.2rem;
+}
+
+footer img {
+  width: 30rem;
+  height: auto;
+}
+
+.align-icons {
+    display: flex;
+    gap: 0.6rem;
+}
+
+.fa {
+  padding: 10px;
+  font-size: 30px;
+  width: 10px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
