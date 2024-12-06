@@ -45,15 +45,16 @@ body {
 }
 
 .name {
-  width: 16rem;
+  width: 90%;
+  max-width: 16rem;
   position: absolute;
   top: 95%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-55%, -50%);
   text-align: center;
   color: white;
   background-color: rgba(0, 0, 0, 0.8);
-  padding: 0 1.2rem 0;
+  padding: 0 0.6rem 0;
 }
 
 .bio-writeup {
@@ -156,6 +157,11 @@ footer img {
 }
 
 @media only screen and (max-width: 800px) {
+  body {
+    width: 90vw;
+    height: 90vh;
+  }
+
   .bio,
   .projects
   .footer{
@@ -164,6 +170,8 @@ footer img {
 
   .bio {
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   .footer {
@@ -172,6 +180,11 @@ footer img {
 }
 
 @media only screen and (max-width: 500px) {
+  body {
+    width: 90vw;
+    height: 90vh;
+  }
+
   .bio,
   .projects
   .footer{
@@ -181,7 +194,7 @@ footer img {
   .projects {
     grid-template-areas: "a";
   }
-  
+
   .footer {
     flex-direction: column;
   }
